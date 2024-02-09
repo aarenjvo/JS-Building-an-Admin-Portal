@@ -4,14 +4,38 @@
 <head>
     <title>Admin Portal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="admin.css">
 </head>
 
 <body>
-   <div id="root">
-       
-   </div>
-    <!-- Our JavaScript Code  -->
+
+    <div id="root">
+        <h1>Admin Portal</h1>
+        <form>
+            <label for = 'The Shinobi Initiative'>The Shinobi Initiative</label>
+            <input type = 'text' id = 'shinobi'>
+            <button onclick = "updateAmount('shinobi')">Save</button>
+        </form>
+        <form>
+            <label for = 'Tess the Wonder Dog'>Tess the Wonder Dog</label>
+            <input type = 'text' id = 'tessWonder'>
+            <button onclick = "updateAmount('tessWonder')">Save</button>
+        </form>
+        <form>
+            <label for = 'legends of Arathrae'>Legends of Arathrae</label>
+            <input type = 'text' id = 'legendsArath'>
+            <button onclick = "updateAmount('legendsArath')">Save</button>
+        </form>
+        <form>
+            <label for = 'W∀RP'>W∀RP</label>
+            <input type = 'text' id = 'W∀RP'>
+            <button onclick = "updateAmount('W∀RP')">Save</button>
+        </form>
+    </div>
+
+
     <script src="admin.js"></script>
 </body>
 
